@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+  </head>
+  <body>
+   <div class="container">
+      <h1 class="currentCity">Tehran</h1>
+      <h2>Date</h2>
+    <h3 class="currentTemprature"><span id="current-degree">12</span>
+      <span class="degrees">
+      °C
+    </span></h3>
+    
+    <h4 class="currentWeather">Mostly Cloudy</h4>
+      <form class="Search">
+        <input id="search-input" type="text" placeholder="Enter the city name" autofocus>
+        <input type="submit" value="Search">
+      </form>
+      <div class="conditions">
+        <small> Rainy conditions expected around 07:00.</small>
+        <hr>
+        <div class="row">
+          <div class="col-3">
+            Now
+            <br/>
+            ☁
+            <br/>
+            12°
+          </div>
+        <div class="col-3">
+            06:54
+            <br/>
+            ☀
+            <br/>
+            Sunrise
+          </div>
+        <div class="col-2">
+            07
+            <br/>
+            🌧
+            
+            <div class="percentage">60%</div>
+            
+            12°
+          </div>
+          <div class="col-2">
+            08
+            <br/>
+            🌧
+            
+            <div class="percentage">60%</div>
+            
+            12°
+          </div>
+          <div class="col-2">
+            09
+            <br/>
+            ☁
+            <br/>
+            12°
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="forecast">
+        <span class="calendar">📅 5-day forecast</span>
+        <hr>
+      <div class="row">
+      <div class="col-4">
+        Today
+      </div>
+      <div class="col-4">
+        🌧
+        <br>
+        <div class="percentage">
+          60%
+        </div>
+      </div>
+      <div class="col-4">
+        11°➡ 16°
+      </div>
+      </div>
+      <hr>
+    
+  
+        <div class="row">
+      <div class="col-4">
+        Sat
+      </div>
+      <div class="col-4">
+        💨</div>
+      <div class="col-4">
+        11°➡ 17°
+      </div>
+      
+    </div>
+    </div>
+    </h3>
+    <p class="sourceCode"><a href="https://github.com/FatemehRajabi/weather-app">Open source code</a>  by Fatemeh</p>
+  <script src="index.js"></script>
+  </body>
+</div>
+</html>
