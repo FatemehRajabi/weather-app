@@ -1,0 +1,61 @@
+body {
+  padding-top: 100px;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+form {
+  margin-top: 20px;
+  text-align: center;
+}
+.currentTemprature {
+  font-size: 48px;
+  font-weight: bold;
+}
+.currentWeather {
+  opacity: 0.33;
+  font-size: 16px;
+}
+.conditions {
+  line-height: 2.5;
+  border: solid;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  margin-left: 25%;
+  padding: 10px;
+  max-width: 50%;
+}
+.percentage {
+  color: red;
+  line-height: 0%;
+  font-size: 10px;
+  font-weight: bold;
+}
+.forecast {
+  line-height: 2.5;
+  border: solid;
+  border-radius: 20px;
+
+  margin-bottom: 10px;
+  margin-left: 25%;
+  padding: 10px;
+  max-width: 50%;
+}
+.calendar {
+  text-align: left;
+  opacity: 0.45;
+  font-size: 13px;
+}
+.degrees {
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  top: -20px;
+}
+.sourceCode {
+  text-align: center;
+}
