@@ -44,7 +44,17 @@ function getLoc(position) {
   axios.get(apiUrl).then(showTemp);
 }
 function showTemp(response) {
+  console.log(response.data);
+  let decription = response.data.weather[0].description;
   let currentTemp = document.querySelector("#current-degree");
   currentTemp.innerHTML = Math.round(response.data.main.temp);
+  let h4 = document.querySelector("h4");
+  h4.innerHTML = decription;
+  let weatherIcon = document
+    .querySelector("#weather-icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 }
 navigator.geolocation.getCurrentPosition(getLoc);

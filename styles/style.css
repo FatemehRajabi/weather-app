@@ -1,5 +1,9 @@
-body {
-  padding-top: 100px;
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid rgb(112, 107, 141);
+  border-radius: 10px;
 }
 h1,
 h2,
@@ -30,6 +34,24 @@ form {
   padding: 10px;
   max-width: 50%;
 }
+#icon {
+  text-align: center;
+}
+#search-input {
+  width: 350px;
+  background-color: rgb(201, 225, 236);
+  border-color: rgb(64, 64, 139);
+  border-radius: 5px;
+}
+#submit-btn {
+  background-color: rgb(146, 206, 236);
+  color: rgb(66, 18, 133);
+  border-radius: 5px;
+}
+.row {
+  text-align: center;
+}
+
 .percentage {
   color: red;
   line-height: 0%;
@@ -59,15 +81,4 @@ form {
 }
 .sourceCode {
   text-align: center;
-}
-#search-input {
-  width: 350px;
-  background-color: rgb(201, 225, 236);
-  border-color: rgb(64, 64, 139);
-  border-radius: 5px;
-}
-#submit-btn {
-  background-color: rgb(146, 206, 236);
-  color: rgb(66, 18, 133);
-  border-radius: 5px;
 }
