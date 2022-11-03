@@ -17,7 +17,7 @@ let h2 = document.querySelector("h2");
 h2.innerHTML = `${day} ${hour}:${minute}`;
 
 function ShowCityTemp(response) {
-  let currentDegree = document.querySelector("h3");
+  let currentDegree = document.querySelector("#current-degree");
   currentDegree.innerHTML = Math.round(response.data.main.temp);
 
   let currentCity = document.querySelector("h1");
