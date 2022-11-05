@@ -17,7 +17,7 @@ form {
   text-align: center;
 }
 .currentTemprature {
-  font-size: 27px;
+  font-size: 35px;
   font-weight: bold;
 }
 .currentWeather {
@@ -37,8 +37,10 @@ form {
 #icon {
   text-align: center;
 }
+.search {
+  max-width: 200px;
+}
 #search-input {
-  width: 350px;
   background-color: rgb(201, 225, 236);
   border-color: rgb(64, 64, 139);
   border-radius: 5px;
@@ -47,6 +49,16 @@ form {
   background-color: rgb(146, 206, 236);
   color: rgb(66, 18, 133);
   border-radius: 5px;
+}
+#celcius-link {
+  font-size: 16px;
+  margin-top: -10px;
+}
+#fahrenheit-link {
+  font-size: 16px;
+}
+.line {
+  font-size: 16px;
 }
 .row {
   text-align: center;

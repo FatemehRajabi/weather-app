@@ -19,7 +19,7 @@ h2.innerHTML = `${day} ${hour}:${minute}`;
 function ShowCityTemp(response) {
   let currentDegree = document.querySelector("#current-degree");
   currentDegree.innerHTML = Math.round(response.data.main.temp);
-
+  celciusDegree = Math.round(response.data.main.temp);
   let currentCity = document.querySelector("h1");
   currentCity.innerHTML = response.data.name;
 
@@ -43,12 +43,31 @@ function showCity(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
   let city = searchInput.value;
-  //let h1 = document.querySelector("h1");
-  //h1.innerHTML = city;
+
   search(city);
 }
 let form = document.querySelector("form");
 form.addEventListener("submit", showCity);
+
+function convertToF(event) {
+  event.preventDefault();
+  let celciusTemp = document.querySelector("#current-degree");
+
+  let fahrenheitDegree = Math.round((celciusDegree * 9) / 5 + 32);
+  celciusTemp.innerHTML = fahrenheitDegree;
+}
+
+function returnToC(event) {
+  event.preventDefault();
+  let celciusTemp = document.querySelector("#current-degree");
+  celciusTemp.innerHTML = Math.round(celciusDegree);
+}
+
+let celciusDegree = null;
+let fahrenheit = document.querySelector("#fahrenheit-link");
+fahrenheit.addEventListener("click", convertToF);
+let celcius = document.querySelector("#celcius-link");
+celcius.addEventListener("click", returnToC);
 
 //function getLoc(position) {
 //console.log(position);
