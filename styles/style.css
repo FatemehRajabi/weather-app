@@ -1,9 +1,15 @@
 .container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 50px auto;
-  padding: 20px;
+
   border: 1px solid rgb(112, 107, 141);
-  border-radius: 10px;
+
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  color: #878787;
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+  padding: 40px;
 }
 h1,
 h2,
@@ -32,13 +38,14 @@ form {
   max-width: 200px;
 }
 #search-input {
-  background-color: rgb(201, 225, 236);
-  border-color: rgb(64, 64, 139);
+  border-color: f1f1f1;
+  background-color: #d9e0ed;
   border-radius: 5px;
 }
 #submit-btn {
-  background-color: rgb(146, 206, 236);
-  color: rgb(66, 18, 133);
+  border-color: #263867;
+  background-color: #263867;
+  color: #d9e0ed;
   border-radius: 5px;
 }
 
@@ -46,7 +53,8 @@ form {
   position: relative;
   top: -12px;
   left: -5px;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: lighter;
 }
 .line {
   font-size: 16px;
