@@ -116,6 +116,7 @@ fahrenheit.addEventListener("click", convertToF);
 let celcius = document.querySelector("#celcius-link");
 celcius.addEventListener("click", returnToC);
 
+search("New York");
 //forecast();
 //function getLoc(position) {
 //console.log(position);
