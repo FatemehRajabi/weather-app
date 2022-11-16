@@ -74,6 +74,12 @@ form {
 .forecast-temperature {
   font-size: 12px;
 }
+#celcius-link {
+  text-decoration: none;
+}
+#fahrenheit-link {
+  text-decoration: none;
+}
 .calendar {
   text-align: left;
   opacity: 0.45;
